@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #menu {
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
+
+    #menu a {
+      float: left;
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    #menu a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: #333;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+<h1><a href="add_university.html">University</a></h1>
+
+<div id="menu">
+    <div class="dropdown">
+        <button class="dropbtn">Person</button>
+        <div class="dropdown-content">
+            <a href="person-form.html">Add</a>
+            <a href="personDetails.html">Get Details</a>
+            <a href="update_person.html">Update</a>
+            <a href="delete_person.html">Delete</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Student</button>
+        <div class="dropdown-content">
+            <a href="add_student.html">Add</a>
+            <a href="personDetails.html">Get Details</a>
+            <a href="update_student.html">Update</a>
+            <a href="delete_student.html">Delete</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Faculty</button>
+        <div class="dropdown-content">
+            <a href="add_faculty.html">Add</a>
+            <a href="getdetails_faculty.html">Get Details</a>
+            <a href="update_faculty.html">Update</a>
+            <a href="delete_faculty.html">Delete</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">GradStudent</button>
+        <div class="dropdown-content">
+            <a href="gradStudentForm.html">Add</a>
+            <a href="getdetails_gradstudent.html">Get Details</a>
+            <a href="update_gradstudent.html">Update</a>
+            <a href="delete_gradstudent.html">Delete</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Department</button>
+        <div class="dropdown-content">
+            <a href="add_department.html">Add</a>
+            <a href="getdetails_department.html">Get Details</a>
+            <a href="update_department.html">Update</a>
+            <a href="delete_department.html">Delete</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">College</button>
+        <div class="dropdown-content">
+            <a href="collegeForm.html">Add</a>
+            <a href="getdetails_college.html">Get Details</a>
+            <a href="updateCollege.html">Update</a>
+            <a href="deleteCollege.html">Delete</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Course</button>
+        <div class="dropdown-content">
+            <a href="courseForm.html">Add</a>
+            <a href="courselist.html">Get Details</a>
+            <a href="courseDetails.html">Update</a>
+            <a href="courseDelete.html">Delete</a>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

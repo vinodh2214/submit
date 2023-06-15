@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>All Persons</title>
+</head>
+<body>
+<h1>All Persons</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    <script th:inline="javascript">
+
+            var persons = /*[[${persons}]]*/ [];
+            for (var i = 0; i < persons.length; i++) {
+                document.write("<tr>");
+                document.write("<td>" + persons[i].id + "</td>");
+                document.write("<td>" + persons[i].name + "</td>");
+                document.write("</tr>");
+            }
+
+        </script>
+</table>
+</body>
+</html>

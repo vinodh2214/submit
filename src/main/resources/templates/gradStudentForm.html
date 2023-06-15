@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grad Student Form</title>
+</head>
+<body>
+<h1>Grad Student Form</h1>
+<form th:action="@{/gradStudents}" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="department">Department:</label>
+  <input type="text" id="department" name="department" required><br><br>
+
+  <label for="advisor">Advisor:</label>
+  <input type="text" id="advisor" name="advisor" required><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html

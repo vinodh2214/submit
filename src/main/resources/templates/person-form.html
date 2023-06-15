@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Person</title>
+</head>
+<body>
+<h1>Add Person</h1>
+<form action="/persons/add" method="post">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="name.fName" required><br><br>
+
+  <label for="middleName">Middle Name:</label>
+  <input type="text" id="middleName" name="name.mName"><br><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="name.lName" required><br><br>
+
+  <label for="street">Street:</label>
+  <input type="text" id="street" name="address.street" required><br><br>
+
+  <label for="aptNo">Apartment Number:</label>
+  <input type="text" id="aptNo" name="address.aptNo"><br><br>
+
+  <label for="city">City:</label>
+  <input type="text" id="city" name="address.city" required><br><br>
+
+  <label for="state">State:</label>
+  <input type="text" id="state" name="address.state" required><br><br>
+
+  <label for="zipCode">Zip Code:</label>
+  <input type="text" id="zipCode" name="address.zipCode" required><br><br>
+
+  <label for="ssn1">SSN 1:</label>
+  <input type="text" id="ssn1" name="ssn[0]" required><br><br>
+
+  <label for="ssn2">SSN 2:</label>
+  <input type="text" id="ssn2" name="ssn[1]"><br><br>
+
+  <label for="bDate">Birth Date:</label>
+  <input type="date" id="bDate" name="bDate" required><br><br>
+
+  <label for="sex">Sex:</label>
+  <select id="sex" name="sex" required>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+

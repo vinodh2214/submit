@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete College</title>
+</head>
+<body>
+<h1>Delete College</h1>
+<p>Are you sure you want to delete this college?</p>
+<form action="/colleges/{id}" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+  <a href="/colleges">Cancel</a>
+</form>
+</body>
+</html>

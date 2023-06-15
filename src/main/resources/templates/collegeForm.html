@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Add College</title>
+</head>
+<body>
+<h1>Add College</h1>
+<form action="/colleges" method="post" th:object="${college}">
+  <label for="collegeName">College Name:</label>
+  <input type="text" id="collegeName" name="colleg_name" required><br><br>
+
+  <label for="collegeDean">College Dean:</label>
+  <input type="text" id="collegeDean" name="college_dean" required><br><br>
+
+  <label for="collegeOffice">College Office:</label>
+  <input type="text" id="collegeOffice" name="college_office" required><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

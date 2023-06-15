@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Department</title>
+</head>
+<body>
+<h1>Edit Department</h1>
+<form action="/departments/{id}" method="post">
+  <input type="hidden" name="_method" value="put">
+  <label for="departmentName">Name:</label>
+  <input type="text" id="departmentName" name="department_name" value="${department.department_name}" required><br><br>
+
+  <label for="departmentOffice">Office:</label>
+  <input type="text" id="departmentOffice" name="department_office" value="${department.department_office}" required><br><br>
+
+  <label for="departmentNo">Number:</label>
+  <input type="text" id="departmentNo" name="department_no" value="${department.department_no}" required><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
